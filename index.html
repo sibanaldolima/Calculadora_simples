@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadorea Simples</title>
+</head>
+<body>
+    <div class="fundo">
+        <h1>Calculadora Simples</h1>
+        <div class="calculadora">
+            <h1>Calculadora</h1>
+            <P id="resultado"></P>
+            <table>
+                <tr>
+                    <td><button class="botoes" onclick="clean()">C</button></td>
+                    <td><button class="botoes" onclick="back()"><</button></td>
+                    <td><button class="botoes" onclick="insert('/')">/</button></td>
+                    <td><button class="botoes" onclick="insert('*')">*</button></td>                    
+                </tr>
+                <tr>
+                    <td><button class="botoes" onclick="insert('7')">7</button></td>
+                    <td><button class="botoes" onclick="insert('8')">8</button></td>
+                    <td><button class="botoes" onclick="insert('9')">9</button></td>
+                    <td><button class="botoes" onclick="insert('-')">-</button></td>
+
+                </tr>
+                <tr>
+                    <td><button class="botoes" onclick="insert('4')">4</button></td>
+                    <td><button class="botoes" onclick="insert('5')">5</button></td>
+                    <td><button class="botoes" onclick="insert('6')">6</button></td>
+                    <td><button class="botoes" onclick="insert('+')">+</button></td>                    
+                </tr>
+                <tr>
+                    <td><button class="botoes" onclick="insert('1')">1</button></td>
+                    <td><button class="botoes" onclick="insert('2')">2</button></td>
+                    <td><button class="botoes" onclick="insert('3')">3</button></td>
+                    <td rowspan="2"><button class="botoes" onclick="calcular()" style="height: 106px;">=</button></td>                    
+                </tr>
+                <tr>
+                    <td colspan="2"><button class="botoes" onclick="insert('0')" style="width: 106px;">0</button></td>
+                    <td><button class="botoes" onclick="insert(',')">,</button></td>
+                                        
+                </tr>
+                
+            </table>
+            
+        </div>
+        <div class="rodape">
+            Desenvolvido por Sibanaldo Rocha Lima  &#169; 2022
+        </div>
+    </div>
+    
+</body>
+</html>
